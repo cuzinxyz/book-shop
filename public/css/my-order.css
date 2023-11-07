@@ -1,0 +1,393 @@
+/*! CSS Used from: https://demo.ecommercehtml.com/assets/css/bootstrap.min.css */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+.order-history-wrapper > * {
+    font-family: "Rubik",serif;
+}
+h4 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: calc(1.275rem + .3vw);
+}
+
+@media (min-width:1200px) {
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0a58ca;
+}
+
+.container {
+    /* width: 100%; */
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* @media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1320px;
+    }
+} */
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+@media (min-width:992px) {
+    .col-lg-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+/*! CSS Used from: https://demo.ecommercehtml.com/assets/css/default.css */
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+/*! CSS Used from: https://demo.ecommercehtml.com/assets/css/style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+h4 {
+    font-family: "Rubik", sans-serif;
+    color: #000;
+    margin: 0;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.64);
+    margin: 0;
+}
+
+.heading-4 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.paragraph-small {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.single-progress-bar-horizontal {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .single-progress-bar-horizontal {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .single-progress-bar-horizontal {
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+    }
+}
+
+.single-progress-bar-horizontal .progress-text {
+    padding-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .single-progress-bar-horizontal .progress-text {
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .single-progress-bar-horizontal .progress-text {
+        padding-bottom: 0;
+    }
+}
+
+.single-progress-bar-horizontal .progress-text p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.single-progress-bar-horizontal .progress-bar-inner .bar-inner {
+    width: 255px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #EFEFEF;
+    position: relative;
+    overflow: hidden;
+}
+
+.single-progress-bar-horizontal .progress-bar-inner .bar-inner .progress-horizontal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 50px;
+    transition: all 1s linear;
+    width: 0;
+    position: relative;
+}
+
+.single-progress-bar-horizontal.shipped .progress-text p {
+    color: #00D4E0;
+}
+
+.single-progress-bar-horizontal.shipped .progress-bar-inner .bar-inner .progress-horizontal {
+    background-color: #00D4E0;
+    width: 50%;
+}
+
+.single-progress-bar-horizontal.cancelled .progress-text p {
+    color: #FF4B22;
+}
+
+.single-progress-bar-horizontal.cancelled .progress-bar-inner .bar-inner .progress-horizontal {
+    background-color: #FF4B22;
+    width: 100%;
+}
+
+.single-progress-bar-horizontal.ready .progress-text p {
+    color: #00C2FE;
+}
+
+.single-progress-bar-horizontal.ready .progress-bar-inner .bar-inner .progress-horizontal {
+    background-color: #00C2FE;
+    width: 30%;
+}
+
+.single-progress-bar-horizontal.ordered .progress-text p {
+    color: #E14C7B;
+}
+
+.single-progress-bar-horizontal.ordered .progress-bar-inner .bar-inner .progress-horizontal {
+    background-color: #E14C7B;
+    width: 15%;
+}
+
+.single-progress-bar-horizontal.delivered .progress-text p {
+    color: #7CB637;
+}
+
+.single-progress-bar-horizontal.delivered .progress-bar-inner .bar-inner .progress-horizontal {
+    background-color: #7CB637;
+    width: 100%;
+}
+
+.single-progress-bar-horizontal.refunded .progress-text p {
+    color: #7CB637;
+}
+
+.single-progress-bar-horizontal.refunded .progress-bar-inner .bar-inner .progress-horizontal {
+    background-color: #7CB637;
+    width: 100%;
+}
+
+.history-title {
+    padding-bottom: 24px;
+}
+
+.history-title p {
+    margin-top: 8px;
+}
+
+.single-order {
+    position: relative;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 8px;
+    transition: all 0.3s linear;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.28);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.single-order .order-id {
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 400;
+}
+
+.single-order .order-meta {
+    margin-top: 4px;
+}
+
+.single-order .order-meta li {
+    display: inline-block;
+}
+
+.single-order .order-meta li+li {
+    margin-left: 15px;
+}
+
+.single-order .order-meta li .product {
+    font-size: 13px;
+    color: #4C4C4C;
+}
+
+.single-order .order-meta li .date {
+    font-size: 14px;
+    color: #4C4C4C;
+}
+
+.single-order .single-progress-bar-horizontal {
+    margin-top: 8px;
+}
+
+.single-order .order-price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+@media (max-width: 767px) {
+    .single-order .order-price {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-top: 16px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .single-order .order-price {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        margin-top: 0;
+    }
+}
+
+.single-order:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.32);
+}
