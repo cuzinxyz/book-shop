@@ -15,6 +15,12 @@ class UsersTableSeeder extends Seeder
     {
         $users = [
             [
+                'name' => 'adminstration',
+                'email' => 'admin@gmail.com',
+                'password' => 'admin',
+                'roles' => [1, 2],
+            ],
+            [
                 'name' => 'Homero Simpson',
                 'email' => 'homero@mail.com',
                 'password' => 'password',
@@ -34,7 +40,7 @@ class UsersTableSeeder extends Seeder
                 'email' => $user['email'],
                 'password' => Hash::make($user['password']),
             ]);
-            
+
             $newUser->roles()->sync($user['roles']);
 
             $newUser->wallet()->create([

@@ -13,12 +13,12 @@ class AuthorsTableSeeder extends Seeder
     public function run()
     {
         $authors = [
-            [
-                'name' => 'Lewis Carroll'
-            ],
-            [
-                'name' => 'Miguel Angel Villar Pinto'
-            ]
+            ['name' => 'George Orwell'],
+            ['name' => 'Joseph Murphy'],
+            ['name' => 'J. G. Ballard'],
+            ['name' => 'Michel Foucault'],
+            ['name' => 'Vladimir Nabokov'],
+            ['name' => 'Milton Crane'],
         ];
 
         foreach ($authors as $author) {

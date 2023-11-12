@@ -166,10 +166,6 @@
                                                     <p class="value">Subotal Price:</p>
                                                     <p class="price">${{ $order->cart_total }}</p>
                                                 </div>
-                                                <div class="sub-total">
-                                                    <p class="value">Discount (-):</p>
-                                                    <p class="price">$10.00</p>
-                                                </div>
                                             </div>
                                             <div class="payable-total">
                                                 <p class="value">Total Payable:</p>

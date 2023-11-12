@@ -81,6 +81,10 @@
                 {{-- </div> --}}
             </div>
         @endforeach
+
+        @if($books->count() <= 0)
+            <p style="font-size:20px">Chưa có sản phẩm nào cả!</p>
+        @endif
     </div>
 
     @push('scripts')
