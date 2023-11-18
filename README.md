@@ -31,6 +31,7 @@ B7: `php artisan serve --port=8000`
  pass: 
  hãy đăng ký ^.^
  ```
+> card number fake stripe: 4242 4242 4242 4242 
 
 ### author: Abner Đỗ
 `telegram: @doabner`
