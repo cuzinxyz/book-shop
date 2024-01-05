@@ -12,7 +12,7 @@ B3: `composer install`
 
 B4: `php artisan key:generate`
 
-B5: `php artisan migration --seed`
+B5: `php artisan migrate --seed`
 
 B6: `php artisan storage:link`
 
